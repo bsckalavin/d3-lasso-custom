@@ -1,4 +1,8 @@
-# d3-lasso
+# d3-lasso-v9
+
+```
+This is a fork from original repository "d3-lasso". This repo updates the code to support the D3 version 7!
+```
 
 d3-lasso.js is a D3 plugin that allows you to tag elements on a page by drawing a line over or around objects. Functions can be run based on the lasso action. This functionality can be useful for brushing or filtering.
 
@@ -21,7 +25,7 @@ The tags can be used in combination with functions to perform actions like styli
 
 ## Installing
 
-If you use NPM, `npm install d3-lasso`. Otherwise, download the [latest release](https://github.com/skokenes/d3-lasso/releases/latest).
+If you use NPM, `npm install d3-lasso-v9`.
 
 ## API Reference
 
