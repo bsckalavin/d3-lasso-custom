@@ -1,5 +1,5 @@
 {
-  "name": "d3-lasso",
+  "name": "d3-lasso-v9",
   "version": "0.0.5",
   "description": "A d3 plugin for lasso selecting elements",
   "keywords": [
@@ -10,28 +10,28 @@
   "license": "BSD-3-Clause",
   "main": "build/d3-lasso.js",
   "jsnext:main": "index",
-  "homepage": "https://github.com/skokenes/d3-lasso",
+  "homepage": "https://github.com/vivek9patel/d3-lasso",
   "repository": {
     "type": "git",
-    "url": "https://github.com/skokenes/d3-lasso.git"
+    "url": "https://github.com/vivek9patel/d3-lasso.git"
   },
   "scripts": {
-    "pretest": "rm -rf build && mkdir build && rollup -c",
+    "pretest": "rm -rf build && mkdir build && rollup -c --bundleConfigAsCjs",
     "test": "tape 'test/**/*-test.js'",
     "prepublish": "npm run test && uglifyjs build/d3-lasso.js -c -m -o build/d3-lasso.min.js",
     "postpublish": "zip -j build/d3-lasso.zip -- LICENSE README.md build/d3-lasso.js build/d3-lasso.min.js"
   },
   "devDependencies": {
-    "rollup": "0.27",
-    "rollup-plugin-commonjs": "^4.1.0",
-    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup": "^3.20.2",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.2",
     "tape": "4",
-    "uglify-js": "2"
+    "uglify-js": "^3.17.4"
   },
   "dependencies": {
-    "d3-dispatch": "^1.0.1",
-    "d3-drag": "^1.0.1",
-    "d3-selection": "^1.0.2",
+    "d3-dispatch": "^3.0.1",
+    "d3-drag": "^3.0.0",
+    "d3-selection": "^3.0.0",
     "robust-point-in-polygon": "^1.0.3"
   }
 }
