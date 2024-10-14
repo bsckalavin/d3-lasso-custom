@@ -1,1 +1,2 @@
-export {default as lasso} from "./src/lasso";
+const lasso = require('./src/lasso');
+module.exports = { lasso };
